@@ -1,0 +1,44 @@
+version: '3.7'
+
+services:
+
+  collector:
+    build: ./collector/app/
+    environment:
+      PYTHONUNBUFFERED: 1
+      LOGLEVEL: INFO
+      DOMAINSOURCE: certstream
+      #DOMAINSOURCE: domainfile
+      #DOMAINFILE: /data/sshfp_testdomains.txt
+      #DOMAINFILE: /data/tranco_G8KK.csv
+    volumes:
+      - ./collector/app:/app
+      - ./collector/data:/data
+      - ./shared:/shared
+    depends_on:
+      - recursor
+      - dnssecrecursor
+    links:
+      - recursor
+      - dnssecrecursor
+
+
+  recursor:
+    image: pschiffe/pdns-recursor
+    # ports:
+    #   - 5301:53/udp
+    #   - 5301:53/tcp
+    environment:
+      PDNS_local_address: 0.0.0.0
+      PDNS_allow_from: 0.0.0.0/0
+      # PDNS_dnssec: validate
+
+  dnssecrecursor:
+    image: pschiffe/pdns-recursor
+    # ports:
+    #   - 5301:53/udp
+    #   - 5301:53/tcp
+    environment:
+      PDNS_local_address: 0.0.0.0
+      PDNS_allow_from: 0.0.0.0/0
+      PDNS_dnssec: validate
