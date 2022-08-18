@@ -18,5 +18,5 @@ drwxr-xr-x 62 sneef sneef 4.0K Aug 15 15:51 ..
 -rw-r--r--  1 sneef sneef  27K May 24 20:52 server.log.new.gz
 ```
 
-[0] 
+[0] https://zenodo.org/record/6993096
 [1] https://github.com/ckolivas/lrzip 

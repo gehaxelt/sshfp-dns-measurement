@@ -5,7 +5,9 @@ This repository contains the code and references to the datasets in the paper:
 
 - `Oh SSH-it, what's my fingerprint? A Large-Scale Analysis of SSH Host Key Fingerprint Verification Records in the DNS`
 
-- Find the paper here [TBD] and a preprint on ArXiv [TDB]
+- Find the paper here [0] and a preprint on ArXiv [1]
+
+- Find the datasets on Zenodo [2]
 
 # Abstract
 
@@ -28,3 +30,10 @@ with more than half of them deployed without using DNSSEC, drastically reducing 
 - To analyze the data, update the two symlinks `logdir_certstream` and `logdir_tranco1m` in `collector/data/` to point to your new scan's log dirs.
 
 - Uncomment the datacleaning and analysis functions in `collector/data/analysis.py` and run `python3 analysis.py`.
+
+
+# References
+
+[0] TBD
+[1] TBD
+[2] https://zenodo.org/record/6993096

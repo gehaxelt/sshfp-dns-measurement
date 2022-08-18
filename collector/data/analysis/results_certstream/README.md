@@ -52,5 +52,5 @@ drwxr-xr-x 11 sneef sneef 4.0K Aug 15 13:24 ..
 -rw-r--r--  1 sneef sneef  70M May 23 22:41 serverlog_structured_data_structued_data.json
 ```
 
-[0] 
+[0] https://zenodo.org/record/6993096
 [1] https://github.com/ckolivas/lrzip 
