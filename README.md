@@ -34,6 +34,6 @@ with more than half of them deployed without using DNSSEC, drastically reducing 
 
 # References
 
-[0] TBD
-[1] TBD
+[0] https://link.springer.com/chapter/10.1007/978-3-031-20974-1_4
+[1] https://arxiv.org/abs/2208.08846
 [2] https://zenodo.org/record/6993096
